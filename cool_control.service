@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts cool_control script at boot
+
+[Service]
+Type=simple
+ExecStart=/etc/local/bin/cool_control-control.sh
+
+[Install]
+WantedBy=multi-user.target
